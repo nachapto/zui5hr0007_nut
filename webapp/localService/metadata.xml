@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZOHR0007_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Compensation" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CprId"/>
+                </Key>
+                <Property Name="CprId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Compensation ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Request Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestTime" Type="Edm.Time" Precision="0" sap:unicode="false" sap:label="Request Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ToaId" Type="Edm.String" MaxLength="4" sap:unicode="false" sap:label="Table of Approval" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ToaSeq" Type="Edm.Byte" sap:unicode="false" sap:label="TOA Sequence" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Status" Type="Edm.String" MaxLength="3" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Requestor" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Requestor" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestorTitle" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Requestor Title" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestorFirstName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Requestor First Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestorLastName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Requestor Last Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestorFullName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Requestor Full Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestorCompName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Requestor Company Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestorEmail" Type="Edm.String" MaxLength="241" sap:unicode="false" sap:label="Requestor Email" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Approver" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Approver" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverTitle" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Approver Title" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverFirstName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Approver First Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverLastName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Approver Last Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ApproverFullName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Approver Full Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Management" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Management" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ManagementTitle" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Management Title" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ManagementFirstName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Management First Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ManagementLastName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Management Last Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ManagementFullName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Management Full Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProjectId" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Project ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProjectDesc" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Project Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CalendarId" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Calendar ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FromDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="From Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FromDatePeriod" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="From Date Period" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ToDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="To Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ToDatePeriod" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="To Date Period" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CprDays" Type="Edm.Decimal" Precision="10" Scale="2" sap:unicode="false" sap:label="Compensatory Days" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ExpiredDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Expired Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Reason" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Reason" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Year" Type="Edm.String" MaxLength="4" sap:unicode="false" sap:label="Year" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Calendar" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CalendarId"/>
+                    <PropertyRef Name="FromDate"/>
+                </Key>
+                <Property Name="CalendarId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Calendar ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FromDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:unicode="false" sap:label="FromDate" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ToDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="ToDate" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Year" Type="Edm.String" MaxLength="4" sap:unicode="false" sap:label="Year" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="WorkDayNormal" Type="Edm.Boolean" sap:unicode="false" sap:label="Normal Working Day" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="WorkDaySpecial" Type="Edm.Boolean" sap:unicode="false" sap:label="Special Working Day" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="HolidayNormal" Type="Edm.Boolean" sap:unicode="false" sap:label="Normal Holiday" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="HolidaySpecial" Type="Edm.Boolean" sap:unicode="false" sap:label="Special Holiday" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DayDesc" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LegendType" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="LegendType" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Versions" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ApplicationId"/>
+                    <PropertyRef Name="Version"/>
+                </Key>
+                <Property Name="ApplicationId" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="BSP Application" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Version" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Version" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TextName" Type="Edm.String" Nullable="false" MaxLength="70" sap:unicode="false" sap:label="Text Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ReleaseDate" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Release Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Content" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="CONTENT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SHStatus" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Status"/>
+                </Key>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatusDesc" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Status Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="SHYear" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Year"/>
+                </Key>
+                <Property Name="Year" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Fiscal Year" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Cancel" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CprId"/>
+                </Key>
+                <Property Name="CprId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Compensation ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionBy" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Action By" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="History" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CprId"/>
+                    <PropertyRef Name="Sequence"/>
+                </Key>
+                <Property Name="CprId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Compensation ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Sequence" Type="Edm.Byte" Nullable="false" sap:unicode="false" sap:label="Sequence" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionBy" Type="Edm.String" MaxLength="12" sap:unicode="false" sap:label="Action By" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionTitle" Type="Edm.String" sap:unicode="false" sap:label="ACTION_TITIE" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionFirstName" Type="Edm.String" sap:unicode="false" sap:label="ACTION_FIRST_NAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionLastName" Type="Edm.String" sap:unicode="false" sap:label="ACTION_LAST_NAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Action Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionTime" Type="Edm.Time" Precision="0" sap:unicode="false" sap:label="Action Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionReason" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Action Reason" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Status" Type="Edm.String" MaxLength="3" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatusDesc" Type="Edm.String" MaxLength="60" sap:unicode="false" sap:label="Status Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZOHR0007_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="CompensationSet" EntityType="ZOHR0007_SRV.Compensation" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="CalendarSet" EntityType="ZOHR0007_SRV.Calendar" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="VersionsSet" EntityType="ZOHR0007_SRV.Versions" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="SHStatusSet" EntityType="ZOHR0007_SRV.SHStatus" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="SHYearSet" EntityType="ZOHR0007_SRV.SHYear" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="CancelSet" EntityType="ZOHR0007_SRV.Cancel" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="HistorySet" EntityType="ZOHR0007_SRV.History" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="http://alts4h1909.theatlantis.co.th:50000/sap/opu/odata/sap/ZOHR0007_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://alts4h1909.theatlantis.co.th:50000/sap/opu/odata/sap/ZOHR0007_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
