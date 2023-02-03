@@ -27,8 +27,8 @@ sap.ui.define([
 
                     }.bind(this),
                     error: function (oError) {
-
-                    }
+                        
+                    }.bind(this)
                 });
             }
         });

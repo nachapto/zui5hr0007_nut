@@ -3,9 +3,9 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Button text="กดฉันสิ" press="onPress" />
+            <Button id="bButton" text="กดฉันสิ" press="onPress" />
 
-            <Text text="{/Compensation/CprId}" />
+            <Text id="tCprId" text="{/Compensation/CprId}" />
         </content>
     </Page>
 </mvc:View>
